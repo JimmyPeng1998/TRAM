@@ -5,7 +5,9 @@ Tucker rank-adaptive method for Tucker tensor completion
 
 ## How to run?
 
-
+- Run ``Run_Me_First.m`` 
+- Run ``Test_increasing.m`` for testing the rank-increasing procedure
+- Run ``Test_decreasing.m`` for testing the rank-decreasing procedure
 
 ## Reference
 
@@ -15,11 +17,9 @@ Tucker rank-adaptive method for Tucker tensor completion
 
 
 
-
-
 ## Authors
 
-- Renfeng Peng (AMSS, China)
+- [Renfeng Peng](https://jimmypeng1998.github.io/index.html) (AMSS, China)
 
 
 
