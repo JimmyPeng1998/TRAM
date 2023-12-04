@@ -1,5 +1,19 @@
 function Xnew=retractionVariety(X,t,g,r)
-
+% rankDecreasing applying rank-decreasing procedure
+% stats_RD=rankDecreasing(X,Delta)
+% Input:
+%   X: an iterate (ttensor)
+%   t: stepsize
+%   g: the approximate (or partial) projection
+%   r: rank parameter
+%
+% Output: 
+%   Xnew: a feasible Tucker tensor
+%
+% Reference: Low-rank optimization on Tucker tensor varieties,
+%    Bin Gao, Renfeng Peng, Ya-xiang Yuan, https://arxiv.org/abs/2311.18324
+%
+% Original author: Renfeng Peng, Nov. 02, 2023.
 
 [U1,R1]=qr(g.U1_tilde,0);
 [U2,R2]=qr(g.U2_tilde,0);

@@ -1,5 +1,21 @@
 function [tildeU1,tildeU2,tildeU3,temp1,temp2,temp3]=computeNormalBasis(X,r,eucGrad,basis)
-% Basis=random/orth
+% computeNormalBasis compute the normal basis Uk1
+% [tildeU1,tildeU2,tildeU3,temp1,temp2,temp3]=computeNormalBasis(X,r,eucGrad,basis)
+% Input:
+%   X: an iterate (ttensor)
+%   r: rank parameter (larger than the rank of X)
+%   eucGrad: Euclidean gradient (ttensor)
+%   basis: approach generating bases ('random' or 'orth', 'random' by
+%   default) 
+%
+% Output: 
+%   tildeU1, tildeU2, tildeU3: selected bases
+%   temp1, temp2, temp3: precomputed Aneqk (only applicable to 'orth')
+%
+% Reference: Low-rank optimization on Tucker tensor varieties,
+%    Bin Gao, Renfeng Peng, Ya-xiang Yuan, https://arxiv.org/abs/2311.18324
+%
+% Original author: Renfeng Peng, Oct. 27, 2023.
 
 dims=size(X);
 core=X.core;

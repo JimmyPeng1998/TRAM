@@ -1,5 +1,21 @@
 function g=computeApproxProj(X,r,eucGrad,tildeU1,tildeU2,tildeU3,temp1,temp2,temp3)
-
+% computeApproxProj compute the approximate projection of the gradient onto
+% Tucker tensor varieties
+% s=computeApproxProj(eucGrad,g,A_Omega)
+% Input:
+%   X: an iterate (ttensor)
+%   r: rank parameter (larger than the rank of X)
+%   eucGrad: Euclidean gradient (ttensor)
+%   tildeU1, tildeU2, tildeU3: selected bases
+%   temp1, temp2, temp3: precomputed Aneqk (can be empty)
+%
+% Output: 
+%   g: approximate projection
+%
+% Reference: Low-rank optimization on Tucker tensor varieties,
+%    Bin Gao, Renfeng Peng, Ya-xiang Yuan, https://arxiv.org/abs/2311.18324
+%
+% Original author: Renfeng Peng, Oct. 27, 2023.
 
 core=X.core;
 U1=X.U{1};
@@ -52,7 +68,7 @@ Core(r(1)+1:end,1:underliner(2),1:underliner(3))=core;
 
 
 
-% Result
+% Results
 g=struct('Y_tilde', Core, 'U1_tilde', [mergeU1 U12],...
     'U2_tilde', [mergeU2 U22],...
     'U3_tilde', [mergeU3 U32]);

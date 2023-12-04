@@ -1,5 +1,5 @@
 # TRAM
-Tucker rank-adaptive method for Tucker tensor completion
+**T**ucker **r**ank-**a**daptive **m**ethod for Tucker tensor completion
 
 
 
@@ -8,6 +8,8 @@ Tucker rank-adaptive method for Tucker tensor completion
 - Run ``Run_Me_First.m`` 
 - Run ``Test_increasing.m`` for testing the rank-increasing procedure
 - Run ``Test_decreasing.m`` for testing the rank-decreasing procedure
+
+
 
 ## Reference
 
@@ -25,9 +27,9 @@ Tucker rank-adaptive method for Tucker tensor completion
 
 ## Copyright
 
-Copyright (C) 2023, Bin Gao, Renfeng Peng, Ya-xiang Yuan
+Copyright (C) 2023, Bin Gao, Renfeng Peng, Ya-xiang Yuan.
 
-This solver is based on a third-party package [GeomCG Toolbox](https://www.epfl.ch/labs/anchp/index-html/software/geomcg/)
+This solver is based on third-party packages [GeomCG Toolbox](https://www.epfl.ch/labs/anchp/index-html/software/geomcg/) and [Tensor Toolbox for MATLAB v3.4](https://gitlab.com/tensors/tensor_toolbox/-/releases/v3.4).
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 

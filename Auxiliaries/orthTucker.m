@@ -1,5 +1,16 @@
 function Xnew=orthTucker(X)
-
+% orthTucker orthogonalize a Tucker tensor
+% Xnew=orthTucker(X)
+% Input:
+%   X: a Tucker tensor (ttensor)
+%
+% Output: 
+%   Xnew: orthogonalized tensor (ttensor)
+%
+% Reference: Low-rank optimization on Tucker tensor varieties,
+%    Bin Gao, Renfeng Peng, Ya-xiang Yuan, https://arxiv.org/abs/2311.18324
+%
+% Original author: Renfeng Peng, Oct. 26, 2023.
 
 core=X.core;
 U1=X.U{1};
