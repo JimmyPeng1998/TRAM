@@ -15,7 +15,7 @@
 
 [Bin Gao](https://www.gaobin.cc/), [Renfeng Peng](https://jimmypeng1998.github.io/index.html), [Ya-xiang Yuan](http://lsec.cc.ac.cn/~yyx/index.html)
 
-- [Low-rank optimization on Tucker tensor varieties](https://arxiv.org/abs/2311.18324)
+- [Low-rank optimization on Tucker tensor varieties](https://link.springer.com/article/10.1007/s10107-024-02186-w)
 
 
 
